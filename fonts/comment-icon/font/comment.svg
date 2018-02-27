@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="comment" horiz-adv-x="1000" >
+<font-face font-family="comment" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="comma" unicode="&#xe800;" d="M975-55v93l105 29c83 35 125 63 170 152 44 89 36 125 36 143l0 16-158 0-159 0v236 236h304 304l-1-214c0-149-9-249-10-250-3-1 0-39-26-127-19-61-43-118-94-185-70-92-165-144-226-169-88-36-154-50-196-54-41-3-49 0-49 0z m-969 0v93l105 29c82 35 125 63 169 152 45 89 36 125 37 143l0 16-159 0-158 0v236 236h304 303l0-214c0-149-9-249-10-250-3-1 0-39-27-127-18-61-43-118-94-185-70-92-164-144-226-169-87-36-153-50-195-54-41-3-49 0-49 0z" horiz-adv-x="1577" />
+</font>
+</defs>
+</svg>
