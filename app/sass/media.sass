@@ -1,0 +1,72 @@
+
+@media only screen and (max-width: 992px)
+	.main_hear
+		.min_height
+			position: relative
+		.menu-icon
+			display: block
+		.main_mnu
+			opacity: 0
+			nav
+				position: absolute
+				bottom: -245px
+				left: 0
+				width: 100%
+				text-align: center
+				ul
+					padding-left: 0
+					float: none
+					li
+						display: block
+						padding-right: 0 !important
+						background: #4c97a3
+						border-bottom: 1px solid
+						padding: 20px 0
+						&:first-child
+							border-top: 1px solid
+						&::after
+							display: none
+
+@media only screen and (max-width: 768px)
+	.comment
+		text-align: left
+		.max_width
+			.comnt_wrap
+				& + p
+					margin-left: 0
+	.main_hear
+		.ttl_wrap
+			margin-left: 0
+		.main_ttl
+			h1
+				font-size: 40px
+
+@media only screen and (max-width: 480px)
+	.main_hear
+		h1
+			font-size: 30px
+		.main_ttl
+			h1
+				font-size: 25px
+				line-height: 50px
+	main
+		.main_ttl
+			h2
+				line-height: 35px
+				font-size: 20px
+	.comment
+		.max_width
+			.comnt_wrap
+				i
+					right: -110px
+					font-size: 70px
+				&::after
+					right: -130px
+					font-size: 22px
+	.map
+		.max_width
+			.main_form
+				width: 100%
+				border-radius: 50px
+				& input, & textarea
+					width: 80%
