@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/andreyK9/view-site/issues"
   },
-  "homepage": "https://github.com/andreyK9/view-site#readme"
+  "homepage": "https://github.com/andreyK9/view-site#readme",
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
 }
