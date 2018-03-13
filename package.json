@@ -1,0 +1,19 @@
+{
+  "name": "view-site",
+  "version": "1.0.0",
+  "description": "my site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyK9/view-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreyK9/view-site/issues"
+  },
+  "homepage": "https://github.com/andreyK9/view-site#readme"
+}
