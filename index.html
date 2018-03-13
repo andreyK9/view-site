@@ -2,126 +2,723 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>View site</title>
-	<link rel="stylesheet" href="css/libs.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>market</title>
+	<link rel="stylesheet" href="css/normalize/normalize.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/duhoot_icons/css/duhoot.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main_hear">
-		<div class="max_width">
-		<div class="row">
-				<div class="col-md-12">
-					<div class="carousel">
-						<div class="owl-carousel owl-theme">
-							<div class="item"></div>
-							<div class="item"></div>
-							<div class="item"></div>
-							<div class="item"></div>
-							<div class="item"></div>
+	<header class="main_head">
+		<div class="color_bg_mnu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 white_bg">
+						<div class="logo_wrap">
+							<img src="img/logo.svg" alt="alt">
 						</div>
-						<div class="main_ttl">
-							<h1>We need the tonic of wildness</h1>
-							<div class="read_mo"><a href="#">Read more</a></div>
+					</div>
+					<div class="col-md-6 white_bg">
+						<div class="head_mnu">
+							<nav>
+								<ul>
+									<li><a href="#">Reality</a></li>
+									<li><a href="#">Living</a></li>
+									<li><a href="#">Education</a></li>
+									<li><a href="#">Entertainment</a></li>
+									<li><a href="#">Mobility</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-md-3 red_bg">
+						<div class="search_wrap">
+							<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+						</div>
+						<div class="login_wrap">
+							<a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+							<span>Login</span></a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="bg_clr">
-				<div class="container">
-					<div class="row min_height">
-						<div class="col-md-4">
-							<div class="ttl_wrap">
-								<h1>Black Sea</h1>
-							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="menu-icon">
-                <span></span>
-            	</div>
-							<div class="main_mnu">
-								<nav>
-									<ul>
-										<li><a href="#">Home</a></li>
-										<li><a href="#">About me</a></li>
-										<li><a href="#">Portfolio</a></li>
-										<li><a href="#">Contact me</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
+		</div>
+		<div class="container">	
+			<div class="search_mnu">
+				<h1>What are you looking for?</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<select name="dubai" id="dubai">
+							<option>Dubai</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<select name="education" id="education">
+							<option>Education</option>
+						</select>
+					</div>
+					<div class="col-md-12">
+						<input type="search" placeholder="Keyword, name, date, ...">
+					</div>
+					<div class="col-md-12">
+						<input type="submit" value="Search">
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main>
-		<div class="max_width">
-			<div class="main_ttl">
-				<h2>At the same time that we are earnest to explore <span>&</span> learn all things</h2>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-				</p>
+		<div class="main_filter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="sorting">
+								<input id="Recommended" type="radio" name="sorting" checked>
+							<label for="Recommended">Recommended</label>
+								<input id="Latest" type="radio" name="sorting">
+							<label for="Latest">Latest</label>
+								<input id="Highlights" type="radio" name="sorting">
+							<label for="Highlights">Highlights</label>	
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="hide_map">
+							<select name="map" id="map" class="map">
+								<option>Dubai</option>
+							</select>
+							<input type="submit" value="Hide map">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="filter_icons">
+							<span>Filter:</span>
+							<input type="checkbox" id="home">	
+								<label for="home"><i class="demo-icon icon-home"></i></label>
+							<input type="checkbox" id="woman">	
+								<label for="woman"><i class="demo-icon icon-woman"></i></label>
+							<input type="checkbox" id="hat">	
+								<label for="hat"><i class="demo-icon icon-hat"></i></label>
+							<input type="checkbox" id="melody">	
+								<label for="melody"><i class="demo-icon icon-melody"></i></label>
+							<input type="checkbox" id="bass">	
+								<label for="bass"><i class="demo-icon icon-bass"></i></label>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="main_icon_wrap">
-				<div class="icon">
-					<img src="img/icon_3.svg" alt="alt">
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="items item-1">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_1">
+									<label for="st_1_1" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_1">
+									<label for="st_2_1" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_1">
+									<label for="st_3_1" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_1">
+									<label for="st_4_1" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_1">
+									<label for="st_5_1" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_1.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<h3>2 bedroom house for rent in Dubai</h3>
+							<a href="#">Vision Agency</a>
+							<input type="checkbox" id="s-1-1" class="star_1" checked>
+							<label for="s-1-1" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-1" class="star_2" checked>
+							<label for="s-2-1" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-1" class="star_3" checked>
+							<label for="s-3-1" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-1" class="star_4" checked>
+							<label for="s-4-1" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-1" class="star_5">
+							<label for="s-5-1" class="fa fa-star"></label>
+							<span>(365)</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-2">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_2">
+									<label for="st_1_2" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_2">
+									<label for="st_2_2" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_2">
+									<label for="st_3_2" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_2">
+									<label for="st_4_2" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_2">
+									<label for="st_5_2" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_2.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-melody"></i>
+							</div>
+							<h3>Beach party festival 2014</h3>
+							<a href="#">Long beach</a>
+							<input type="checkbox" id="s-1-2" class="star_1" checked>
+							<label for="s-1-2" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-2" class="star_2" checked>
+							<label for="s-2-2" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-2" class="star_3" checked>
+							<label for="s-3-2" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-2" class="star_4" checked>
+							<label for="s-4-2" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-2" class="star_5" checked>
+							<label for="s-5-2" class="fa fa-star"></label>
+							<span>(1165)</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-3">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_3">
+									<label for="st_1_3" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_3">
+									<label for="st_2_3" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_3">
+									<label for="st_3_3" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_3">
+									<label for="st_4_3" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_3">
+									<label for="st_5_3" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_3.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-bass"></i>
+							</div>
+							<h3>Aliquam quis pulvinar purus</h3>
+							<a href="#">Bus Trans</a>
+							<input type="checkbox" id="s-1-3" class="star_1" checked>
+							<label for="s-1-3" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-3" class="star_2" checked>
+							<label for="s-2-3" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-3" class="star_3" checked>
+							<label for="s-3-3" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-3" class="star_4" checked>
+							<label for="s-4-3" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-3" class="star_5">
+							<label for="s-5-3" class="fa fa-star"></label>
+							<span>(365)</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-1">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_4">
+									<label for="st_1_4" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_4">
+									<label for="st_2_4" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_4">
+									<label for="st_3_4" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_4">
+									<label for="st_4_4" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_4">
+									<label for="st_5_4" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_4.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<h3>4 bedroom house for rent in Dubai</h3>
+							<a href="#">reality Agency</a>
+							<input type="checkbox" id="s-1-4" class="star_1" checked>
+							<label for="s-1-4" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-4" class="star_2" checked>
+							<label for="s-2-4" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-4" class="star_3" checked>
+							<label for="s-3-4" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-4" class="star_4" checked>
+							<label for="s-4-4" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-4" class="star_5">
+							<label for="s-5-4" class="fa fa-star"></label>
+							<span>(365)</span>
+						</div>
+					</div>
 				</div>
-				<div class="icon">
-					<img src="img/icon_2.svg" alt="alt">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="items_big item_bg_1">
+							<img src="img/product/product_big_1.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<div class="header_wrap_comment">
+								<h3>Vision Agency</h3>
+								<input type="checkbox" id="st-1-1" class="star_1" checked>
+								<label for="st-1-1" class="fa fa-star"></label>
+								<input type="checkbox" id="st-2-1" class="star_2" checked>
+								<label for="st-2-1" class="fa fa-star"></label>
+								<input type="checkbox" id="st-3-1" class="star_3" checked>
+								<label for="st-3-1" class="fa fa-star"></label>
+								<input type="checkbox" id="st-4-1" class="star_4" checked>
+								<label for="st-4-1" class="fa fa-star"></label>
+								<input type="checkbox" id="st-5-1" class="star_5">
+								<label for="st-5-1" class="fa fa-star"></label>
+								<span>(365)</span>								
+							</div>
+							<div class="comment_wrap">
+								<div class="str_wrap">
+									<input type="checkbox" id="str-1-1" class="star_1" checked>
+										<label for="str-1-1" class="fa fa-star"></label>
+									<input type="checkbox" id="str-2-1" class="star_2" checked>
+										<label for="str-2-1" class="fa fa-star"></label>
+									<input type="checkbox" id="str-3-1" class="star_3" checked>
+										<label for="str-3-1" class="fa fa-star"></label>
+									<input type="checkbox" id="str-4-1" class="star_4">
+										<label for="str-4-1" class="fa fa-star"></label>
+									<input type="checkbox" id="str-5-1" class="star_5">
+										<label for="str-5-1" class="fa fa-star"></label>
+								</div>
+								<h4>Lucy-P</h4>
+								<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<span>...read more</span></p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="items_big item_bg_2">
+							<img src="img/product/product_big_2.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<div class="header_wrap_comment">
+								<h3>Skybox club</h3>
+								<input type="checkbox" id="st-1-2" class="star_1" checked>
+								<label for="st-1-2" class="fa fa-star"></label>
+								<input type="checkbox" id="st-2-2" class="star_2" checked>
+								<label for="st-2-2" class="fa fa-star"></label>
+								<input type="checkbox" id="st-3-2" class="star_3" checked>
+								<label for="st-3-2" class="fa fa-star"></label>
+								<input type="checkbox" id="st-4-2" class="star_4" checked>
+								<label for="st-4-2" class="fa fa-star"></label>
+								<input type="checkbox" id="st-5-2" class="star_5">
+								<label for="st-5-2" class="fa fa-star"></label>
+								<span>(1365)</span>								
+							</div>
+							<div class="comment_wrap">
+								<div class="str_wrap">
+									<input type="checkbox" id="str-1-2" class="star_1" checked>
+										<label for="str-1-2" class="fa fa-star"></label>
+									<input type="checkbox" id="str-2-2" class="star_2" checked>
+										<label for="str-2-2" class="fa fa-star"></label>
+									<input type="checkbox" id="str-3-2" class="star_3" checked>
+										<label for="str-3-2" class="fa fa-star"></label>
+									<input type="checkbox" id="str-4-2" class="star_4">
+										<label for="str-4-2" class="fa fa-star"></label>
+									<input type="checkbox" id="str-5-2" class="star_5">
+										<label for="str-5-2" class="fa fa-star"></label>
+								</div>
+								<h4>Peter145</h4>
+								<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<span>...read more</span></p>
+								</div>
+						</div>
+					</div>
 				</div>
-				<div class="icon">
-					<img src="img/icon_1.svg" alt="alt">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="items item-1">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_5">
+									<label for="st_1_5" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_5">
+									<label for="st_2_5" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_5">
+									<label for="st_3_5" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_5">
+									<label for="st_4_5" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_5">
+									<label for="st_5_5" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_1.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<h3>2 bedroom house for rent in Dubai</h3>
+							<a href="#">Vision Agency</a>
+							<input type="checkbox" id="s-1-5" class="star_1" checked>
+							<label for="s-1-5" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-5" class="star_2" checked>
+							<label for="s-2-5" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-5" class="star_3" checked>
+							<label for="s-3-5" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-5" class="star_4" checked>
+							<label for="s-4-5" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-5" class="star_5">
+							<label for="s-5-5" class="fa fa-star"></label>
+							<span>(365)</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-2">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_6">
+									<label for="st_1_6" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_6">
+									<label for="st_2_6" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_6">
+									<label for="st_3_6" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_6">
+									<label for="st_4_6" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_6">
+									<label for="st_5_6" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_2.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-melody"></i>
+							</div>
+							<h3>Beach party festival 2014</h3>
+							<a href="#">Long beach</a>
+							<input type="checkbox" id="s-1-6" class="star_1" checked>
+							<label for="s-1-6" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-6" class="star_2" checked>
+							<label for="s-2-6" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-6" class="star_3" checked>
+							<label for="s-3-6" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-6" class="star_4" checked>
+							<label for="s-4-6" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-6" class="star_5" checked>
+							<label for="s-5-6" class="fa fa-star"></label>
+							<span>(1165)</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-3">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_7">
+									<label for="st_1_7" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_7">
+									<label for="st_2_7" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_7">
+									<label for="st_3_7" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_7">
+									<label for="st_4_7" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_7">
+									<label for="st_5_7" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_3.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-bass"></i>
+							</div>
+							<h3>Aliquam quis pulvinar purus</h3>
+							<a href="#">Bus Trans</a>
+							<input type="checkbox" id="s-1-7" class="star_1" checked>
+							<label for="s-1-7" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-7" class="star_2" checked>
+							<label for="s-2-7" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-7" class="star_3" checked>
+							<label for="s-3-7" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-7" class="star_4" checked>
+							<label for="s-4-7" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-7" class="star_5">
+							<label for="s-5-7" class="fa fa-star"></label>
+							<span>(365)</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-1">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_8">
+									<label for="st_1_8" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_8">
+									<label for="st_2_8" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_8">
+									<label for="st_3_8" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_8">
+									<label for="st_4_8" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_8">
+									<label for="st_5_8" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_4.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<h3>4 bedroom house for rent in Dubai</h3>
+							<a href="#">reality Agency</a>
+							<input type="checkbox" id="s-1-8" class="star_1" checked>
+							<label for="s-1-8" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-8" class="star_2" checked>
+							<label for="s-2-8" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-8" class="star_3" checked>
+							<label for="s-3-8" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-8" class="star_4" checked>
+							<label for="s-4-8" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-8" class="star_5">
+							<label for="s-5-8" class="fa fa-star"></label>
+							<span>(365)</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="items_big item_bg_2">
+							<img src="img/product/product_big_2.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<div class="header_wrap_comment">
+								<h3>Skybox club</h3>
+								<input type="checkbox" id="st-1-3" class="star_1" checked>
+								<label for="st-1-3" class="fa fa-star"></label>
+								<input type="checkbox" id="st-2-3" class="star_2" checked>
+								<label for="st-2-3" class="fa fa-star"></label>
+								<input type="checkbox" id="st-3-3" class="star_3" checked>
+								<label for="st-3-3" class="fa fa-star"></label>
+								<input type="checkbox" id="st-4-3" class="star_4" checked>
+								<label for="st-4-3" class="fa fa-star"></label>
+								<input type="checkbox" id="st-5-3" class="star_5">
+								<label for="st-5-3" class="fa fa-star"></label>
+								<span>(1365)</span>								
+							</div>
+							<div class="comment_wrap">
+								<div class="str_wrap">
+									<input type="checkbox" id="str-1-3" class="star_1" checked>
+										<label for="str-1-3" class="fa fa-star"></label>
+									<input type="checkbox" id="str-2-3" class="star_2" checked>
+										<label for="str-2-3" class="fa fa-star"></label>
+									<input type="checkbox" id="str-3-3" class="star_3" checked>
+										<label for="str-3-3" class="fa fa-star"></label>
+									<input type="checkbox" id="str-4-3" class="star_4">
+										<label for="str-4-3" class="fa fa-star"></label>
+									<input type="checkbox" id="str-5-3" class="star_5">
+										<label for="str-5-3" class="fa fa-star"></label>
+								</div>
+								<h4>Peter145</h4>
+								<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<span>...read more</span></p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-1">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_9">
+									<label for="st_1_9" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_9">
+									<label for="st_2_9" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_9">
+									<label for="st_3_9" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_9">
+									<label for="st_4_9" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_9">
+									<label for="st_5_9" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_1.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-home"></i>
+							</div>
+							<h3>2 bedroom house for rent in Dubai</h3>
+							<a href="#">Vision Agency</a>
+							<input type="checkbox" id="s-1-9" class="star_1" checked>
+							<label for="s-1-9" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-9" class="star_2" checked>
+							<label for="s-2-9" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-9" class="star_3" checked>
+							<label for="s-3-9" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-9" class="star_4" checked>
+							<label for="s-4-9" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-9" class="star_5">
+							<label for="s-5-9" class="fa fa-star"></label>
+							<span>(365)</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="items item-2">
+							<div class="wrap_mnu">
+								<a href="#" name="show"><i class="fa fa-search"></i>Show more</a>
+								<div class="stars_comment">
+									<input type="checkbox" id="st_1_10">
+									<label for="st_1_10" class="fa fa-star"></label>
+									<input type="checkbox" id="st_2_10">
+									<label for="st_2_10" class="fa fa-star"></label>
+									<input type="checkbox" id="st_3_10">
+									<label for="st_3_10" class="fa fa-star"></label>
+									<input type="checkbox" id="st_4_10">
+									<label for="st_4_10" class="fa fa-star"></label>
+									<input type="checkbox" id="st_5_10">
+									<label for="st_5_10" class="fa fa-star"></label>
+									<a href="#">
+										<i class="fa fa-comments-o"></i>
+									</a>
+								</div>
+							</div>
+							<img src="img/product/product_2.jpg" alt="alt">
+							<div class="icon">
+								<i class="demo-icon icon-melody"></i>
+							</div>
+							<h3>Beach party festival 2014</h3>
+							<a href="#">Long beach</a>
+							<input type="checkbox" id="s-1-10" class="star_1" checked>
+							<label for="s-1-10" class="fa fa-star"></label>
+							<input type="checkbox" id="s-2-10" class="star_2" checked>
+							<label for="s-2-10" class="fa fa-star"></label>
+							<input type="checkbox" id="s-3-10" class="star_3" checked>
+							<label for="s-3-10" class="fa fa-star"></label>
+							<input type="checkbox" id="s-4-10" class="star_4" checked>
+							<label for="s-4-10" class="fa fa-star"></label>
+							<input type="checkbox" id="s-5-10" class="star_5" checked>
+							<label for="s-5-10" class="fa fa-star"></label>
+							<span>(1165)</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="load_wrap">
+						<a href="#">Load more
+							<i class="fa fa-long-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="what_can">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="h_wrap">
+							<h2>What can DuHoot offer to you?</h2>
+							<p>Etiam cursus ipsum quis enim faucibus</p>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="wrap_big_icon">
+							<i class="demo-icon icon-home"></i>
+							<i class="demo-icon icon-woman"></i>
+							<i class="demo-icon icon-hat"></i>
+							<i class="demo-icon icon-melody"></i>
+							<i class="demo-icon icon-bass"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reality_wrap">
+				<h2>Reality</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="wrap_p">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="wrap_p">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	<section class="comment">
-		<div class="max_width">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="comnt_wrap">
-							<img src="img/coomnt_icon.png" alt="alt">
-							<i class="demo-icon icon-comma"></i>
-						</div>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+	<footer class="main_foot">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="foot_ttl">
+						<h2>Subscribe to our newsletter</h2>
+						<div class="subs_wrap">
+						<i class="fa fa-envelope"></i>
+						<input type="email" name="" id="" placeholder="your@email.com">
+						<input type="submit" value="Subscribe"></div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="map">
-		<div class="max_width">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="back_link">
-							<form action="" class="main_form">
-								<input type="text" placeholder="Name"><br>
-								<input type="text" placeholder="email address"><br>
-								<textarea placeholder="Message" rows="3"></textarea><br>
-								<button><img src="img/form_btn_icon.svg" alt="alt"></button>
-							</form>
-						</div>
+				<div class="col-md-4">
+					<div class="foot_nav">
+						<a href="#"><h3>Ipsum quis</h3></a>
+						<ul>
+							<li><a href="#">Aliquam quis</a></li>
+							<li><a href="#">Pulvinar purus</a></li>
+							<li><a href="#">Etiam cursus</a></li>
+							<li><a href="#">Ipsum quis</a></li>
+							<li><a href="#">Enim faucibus</a></li>
+						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<footer class="mn_foot">
-		<div class="max_width">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p>Copyright © 2012 Css Author.com</p>
+				<div class="col-md-4">
+					<div class="foot_nav">
+						<a href="#"><h3>Ipsum quis</h3></a>
+						<ul>
+							<li><a href="#">Aliquam quis</a></li>
+							<li><a href="#">Pulvinar purus</a></li>
+							<li><a href="#">Etiam cursus</a></li>
+							<li><a href="#">Ipsum quis</a></li>
+							<li><a href="#">Enim faucibus</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="foot_nav">
+						<a href="#"><h3>Follow us</h3></a>
+						<div class="soc_btn">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-youtube"></i></a>
+						<p>Copyright © All Rights reserved</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script src="js/libs.min.js"></script>
-	<script src="js/common.js"></script>
 </body>
 </html>

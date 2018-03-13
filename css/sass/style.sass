@@ -1,0 +1,681 @@
+h1, h2, h3, h4, h5, h6, ul, li
+	margin: 0
+	padding: 0
+
+body,a
+	font-size: 14px
+	font-family: "GothamMedium"
+	color: #566375
+
+// grid element ------------------------------------------------
+
+$width: 980px
+$pr_width: 100% / 12
+
+.container
+	max-width: $width
+	margin: 0 auto
+	padding: 0 15px
+
+.container-fluid
+	padding: 0 15px
+	margin: 0 auto
+
+.row
+	margin-left: -15px
+	margin-right: -15px
+	display: flex
+	flex-wrap: wrap
+
+.no_padding
+	padding: 0 !important
+
+@for $i from 1 through 12
+	.col-md-#{$i}
+		padding: 0 15px
+		box-sizing: border-box
+		flex-basis: $pr_width*$i
+
+// customs styles --------------------------------------------------------------
+
+.bg_blue
+	background-color: blue
+	height: 40px
+
+$red_clr: #e94e38
+$green_clr: #1baf5d
+$orange_clr: #f19e1f
+$purple_clr: #88499c
+
+// mixins -------------------------------------------------------------------
+
+%label
+	display: inline-block
+	width: 55px
+	height: 55px
+	background-color: #b6c0c1
+	border-radius: 50%
+	margin-left: 6px
+	text-align: center
+	vertical-align: middle
+	line-height: 50px
+	transition: all 0.3s
+	i
+		display: inline
+		color: #fff
+		font-size: 24px
+		&::before
+			margin: 0
+			width: auto
+
+%big_itm
+	display: inline-block
+	margin-top: 33px
+	margin-left: 10px
+	margin-right: 10px
+	position: relative
+	padding-bottom: 10px
+	overflow: hidden
+	border-radius: 5px
+	box-shadow: 0 1px 0 0 #e2dee0
+	.wrap_mnu
+		display: none
+	img
+		box-sizing: border-box
+		border-bottom: 3px solid #b6c0c1
+	.header_wrap_comment
+		width: 100%
+		padding-top: 95px
+		position: absolute
+		left: 0
+		top: 0
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		height: 120px
+		box-sizing: border-box
+		background-image: linear-gradient(rgba(0,0,0,.0) 50%, rgba(0,0,0,1))
+		input[type="checkbox"]:checked
+			& + label
+				&::before
+					content: "\f005"
+		input[type="checkbox"]
+			display: none
+			& + label:not(:last-of-type)
+				margin-right: -4px
+			& + label
+				color: #f19e1f
+				font-size: 12px
+				&::before
+					content: "\f006"
+		h3
+			font-size: 18px
+			display: inline-block
+	.icon
+		@extend %label
+		margin: 0
+		position: absolute
+		top: 93px
+		left: 20px
+		border: 3px solid #fff
+		z-index: 2
+	.comment_wrap
+		margin-top: 15px
+		padding-left: 98px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 30px
+			left: 20px
+			width: 61px
+			height: 61px
+			background-image: url(../img/comment_1_icon.png)
+		.str_wrap
+		input[type="checkbox"]:checked
+			& + label
+				&::before
+					content: "\f005"
+		input[type="checkbox"]
+			display: none
+			& + label:not(:last-of-type)
+				margin-right: -4px
+			& + label
+				color: #f19e1f
+				font-size: 18px
+				&::before
+					content: "\f006"
+		h4
+			padding-top: 10px
+			font-size: 16px
+			font-family: "GothamBold"
+			text-transform: uppercase
+		p
+			margin: 7px 0
+			max-width: 305px
+			font-family: "GothamBook"
+			font-size: 14px
+			color: #566375
+			line-height: 20px
+			position: relative
+			span
+				position: absolute
+				bottom: 0
+				right: -35px
+				font-family: "GothamMedium"
+				font-size: 14px
+
+// main Header --------------------------------------------------------------
+.main_head
+	background: url("../img/main_bg.jpg") repeat-x center
+	a
+		color: #96a6a7
+	.color_bg_mnu
+		background-image: linear-gradient(to right, #fff 70%, #e94e38 70%)
+	.white_bg
+		background-color: #fff
+	.red_bg
+		background-color: #e94e38
+	.logo_wrap
+		width: 154px
+		padding-top: 14px
+		img
+			width: 100%
+	.head_mnu
+		padding-top: 30px
+		nav
+			ul
+				list-style-type: none
+				padding-left: 2px
+				font-size: 0
+				li:not(:last-child)
+					padding-right: 18px
+				li
+					display: inline-block
+					a
+						text-decoration: none
+						font-size: 14px
+						text-transform: uppercase
+	.search_wrap
+		margin-left: -15px
+		display: inline-block
+		background-color: #e2dee0
+		i
+			color: #fff
+			font-size: 24px
+			padding: 25px
+	.login_wrap
+		margin-top: 29px
+		margin-left: 37px
+		display: inline-block
+		vertical-align: top
+		a
+			text-decoration: none
+			text-transform: uppercase
+			color: #fff
+			i
+				font-size: 18px
+			span
+				margin-left: 10px
+	.search_mnu
+		text-align: center
+		padding-top: 52px
+		padding-bottom: 40px
+		max-width: 470px
+		margin: 0 auto
+		h1
+			font-size: 30px
+			font-family: "GothamBook"
+			color: #fff
+			word-spacing: 2px
+			padding-bottom: 32px
+
+		#dubai,
+		#education
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			background: url(../img/angle_down.png) no-repeat 90% center
+		#dubai,
+		#education,
+		input[type=search],
+		input[type=submit],
+		input::-webkit-input-placeholder
+			width: 100%
+			padding: 15px
+			padding-left: 25px
+			border-radius: 50px
+			background-color: rgba(255,255,255,.1)
+			border: 1px solid rgba(255,255,255,.2)
+			color: #fff
+			font-family: "GothamBook"
+			font-size: 18px
+		input[type=search]
+			margin-top: 23px
+			border: none
+			background: none
+			outline: none
+			padding: 0
+			height: 51px
+			text-indent: 10px
+		input[type=submit]
+			border: none
+			margin-top: 30px
+			width: 30%
+			text-transform: uppercase
+			font-size: 18px
+			padding: 23px 0 20px
+			background-color: #e94e38
+			text-shadow: 0 1px 1px  rgba(0,0,0,.15)
+			box-shadow: 0 2px 0 0 #c1412e
+
+// main-section  -------------------------------------------------------------
+
+main
+	.main_filter
+		padding-bottom: 10px
+		border-bottom: 1px solid #edebec
+		color: #96a6a7
+		.sorting
+			padding-top: 20px
+			input
+				display: none
+			input:checked + label
+				color: $red_clr
+			label
+				text-transform: uppercase
+				font-size: 12px
+				margin-right: 15px
+		.hide_map
+			text-align: center
+			padding-top: 10px
+			select,
+			.map
+				-webkit-appearance: none
+				-moz-appearance: none
+				appearance: none
+				background: url(../img/angle_gray_down.png) no-repeat 85% center
+				padding: 10px 50px
+				padding-left: 25px
+				border-radius: 50px
+				border: 1px solid rgba(150,166,167,.5)
+				color: $red_clr
+				font-size: 12px
+				text-transform: uppercase
+			input
+				@extend .map
+				padding: 11px
+				padding-left: 20px
+				padding-right: 45px
+				margin-left: 10px
+				color: #fff
+				background-color: #1baf5d
+				background-image: url(../img/map_icon.png)
+				background-position: 85% center
+		.filter_icons
+			padding-top: 8px
+			float: right
+			span
+				text-transform: uppercase
+				font-size: 12px
+			input
+				display: none
+			input[id="home"]:checked + label
+				background-color: $green_clr
+			input[id="melody"]:checked + label
+				background-color: $orange_clr
+			input[id="bass"]:checked + label
+				background-color: $purple_clr
+			label
+				display: inline-block
+				width: 40px
+				height: 40px
+				background-color: #b6c0c1
+				border-radius: 50%
+				margin-left: 6px
+				text-align: center
+				vertical-align: middle
+				line-height: 40px
+				transition: all 0.3s
+				i
+					display: inline
+					color: #fff
+					font-size: 19px
+				i::before
+					margin: 0
+					width: auto
+	.content
+		padding-top: 12px
+		.items
+			max-width: 210px
+			margin: 0 auto
+			margin-top: 33px
+			text-align: center
+			padding-bottom: 10px
+			overflow: hidden
+			border-radius: 5px
+			box-shadow: 0 1px 0 0 #e2dee0
+			position: relative
+			.wrap_mnu:hover
+				opacity: 1
+				& ~ img
+					filter: blur(2px)
+			.wrap_mnu
+				opacity: 0
+				box-sizing: border-box
+				padding-top: 22px
+				padding-left: 35px
+				padding-right: 35px
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				min-height: 140px
+				z-index: 1
+				transition: opacity 0.3s
+				a[name="show"]
+					display: block
+					width: 100%
+					outline: none
+					background: inherit
+					text-transform: uppercase
+					font-size: 12px
+					color: #fff
+					border: 2px solid #fff
+					border-radius: 50px
+					padding: 10px 0
+					padding-left: 22px
+					box-sizing: border-box
+					position: relative
+					i
+						&::before
+							position: absolute
+							top: 10px
+							left: 20px
+				.stars_comment
+					padding-top: 12px
+					input[type="checkbox"]
+						& + label
+							font-size: 18px
+							color: #fff
+					a
+						display: inline-block
+						padding-top: 0
+						margin-left: 20px
+						color: #fff
+						font-size: 24px
+			span
+				margin-left: 4px
+				font-size: 12px
+				color: #96a6a7		
+			input[type="checkbox"]:checked
+				& + label
+					&::before
+						content: "\f005"
+			input[type="checkbox"]
+				display: none
+				& + label:not(:last-of-type)
+					margin-right: -4px
+				& + label
+					color: #f19e1f
+					font-size: 12px
+					&::before
+						content: "\f006"
+			a
+				padding-top: 15px
+				padding-bottom: 3px
+				text-align: center
+				font-size: 12px
+				display: block
+				text-decoration: none
+				text-transform: uppercase
+				color: $green_clr
+			h3
+				padding-top: 28px
+				font-size: 14px
+				width: 88%
+				margin: 0 auto
+				line-height: 17px
+			img
+				width: 100%
+				border-bottom: 3px solid $green_clr
+			.icon
+				@extend %label
+				margin: 0
+				position: absolute
+				top: 110px
+				left: 74px
+				border: 3px solid #fff
+				z-index: 2
+		.item-1
+			position: relative
+			.wrap_mnu
+				background-color: rgba(27,175,93,.7)
+			.icon
+				background-color: $green_clr
+			&::after
+				content: '$2,990'
+				display: inline-block
+				position: absolute
+				top: 7px
+				right: 9px
+				padding: 6px 10px
+				border-radius: 50px
+				background-color: $green_clr
+				color: #fff
+				font-size: 12px
+		.item-2
+			@extend .item-1
+			.wrap_mnu
+				background-color: rgba(241,158,31,.7)
+			img
+				border-bottom: 3px solid $orange_clr
+			h3
+				padding-bottom: 17px
+			.icon
+				background-color: $orange_clr
+			a
+				color: $orange_clr
+			&::after
+				display: none
+		.item-3
+			@extend .item-1
+			.wrap_mnu
+				background-color: rgba(136,73,156,.7)
+			img
+				border-bottom: 3px solid $purple_clr
+			.icon
+				background-color: $purple_clr
+			a
+				color: $purple_clr
+			&::after
+				display: none
+		.items_big
+			@extend %big_itm
+		.item_bg_1
+			.icon
+				background-color: $green_clr
+			img
+				border-color: $green_clr
+		.item_bg_2
+			.icon
+				background-color: $orange_clr
+			img
+				border-color: $orange_clr
+		.load_wrap
+			padding: 25px 15px 35px
+			width: 100%
+			text-align: center
+			border-bottom: 1px solid #e2dee0
+			a
+				font-size: 18px
+				text-decoration-color: #d3d3d7
+				i
+					font-size: 14px
+					margin-left: 3px
+	.what_can
+		padding: 85px 0
+		.h_wrap
+			text-align: center
+			font-family: "GothamBook"
+			h2
+				font-size: 22px
+			p
+				font-size: 16px
+				margin: 8px 0
+		.wrap_big_icon
+			display: flex
+			justify-content: space-between
+			padding-top: 61px
+			margin: 0 auto
+			max-width: 760px
+			text-align: center
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 112px
+				width: 100%
+				height: 2px
+				background-color: #e2dee0
+				z-index: -1
+			i
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100px
+				height: 100px
+				background-color: #fff
+				border: 2px solid #9dacad
+				outline: 4px solid #fff
+				border-radius: 50%
+				font-size: 43px
+				color: #9dacad
+				&::before
+					margin: 0
+					width: auto
+				&:first-child
+					color: $green_clr
+					border-color: $green_clr
+	.reality_wrap
+		max-width: 760px
+		margin: 0 auto
+		padding-left: 15px
+		padding-right: 15px
+		font-family: "GothamBook"
+		h2
+			padding: 32px 0 23px
+			text-align: center
+			font-size: 24px
+			color: $green_clr
+		.wrap_p
+			p
+				padding-left: 95px
+				font-size: 14px
+				line-height: 24px
+				position: relative
+			p::before
+				content: ''
+				position: absolute
+				top: 6px
+				left: 0
+				width: 62px
+				height: 62px
+				border-radius: 50%
+				background-color: $green_clr
+				background-image: url(../img/reality_sprites.png)
+				background-repeat: no-repeat
+		.col-md-6:first-child
+			p::before
+				background-position: -32px 19px
+		.col-md-6:last-child
+			p::before
+				background-position: 16px 16px
+
+.main_foot
+	background: url(../img/footer_bg.jpg) repeat-x center 0
+	margin-top: 38px
+	padding: 57px 0
+	padding-bottom: 50px
+	color: #fff
+	a
+		color: #fff
+	.foot_ttl
+		text-align: center
+		padding-bottom: 56px
+		
+
+		border-bottom: 1px solid rgba(255,255,255,.1)
+		h2
+			font-size: 24px
+			font-family: "GothamBook"
+		.subs_wrap
+			margin: 0 auto
+			margin-top: 42px
+			max-width: 492px
+			padding: 4px 0 6px
+			padding-left: 58px
+			border-radius: 50px
+			background-color: rgba(255,255,255,.1)
+			border: 1px solid rgba(255,255,255,.2)
+			min-height: 20px
+			position: relative
+			box-sizing: border-box
+			position: relative
+			text-align: left
+			i
+				position: absolute
+				top: 21px
+				left: 33px
+			i::before
+				content: '\f003'
+				font-size: 17px
+			input
+				display: inline-block
+			input[type=email]
+				border: none // Убираем рамку
+				outline: none // Убираем свечение в Chrome и Safari
+				-webkit-appearance: none // Убираем рамку в Chrome и Safari
+				width: 300px // Ширина поля
+				vertical-align: middle // Выравнивание по середине
+				background-color: transparent
+				color: #fff
+				font-family: "GothamBook"
+				font-size: 18px
+				padding-left: 5px
+			input[type=email]::-webkit-input-placeholder
+				color: #fff
+				font-family: "GothamBook"
+				font-size: 18px
+				padding-left: 5px
+			input[type=submit]
+				cursor: pointer
+				border: none // Убираем рамку
+				width: 120px
+				text-transform: uppercase
+				color: #fff
+				font-size: 14px
+				padding: 18px 0 16px
+				border-radius: 50px
+				background-color: #e94e38
+				text-shadow: 0 1px 1px  rgba(0,0,0,.15)
+				box-shadow: 0 2px 0 0 #c1412e
+	.foot_nav
+		margin-top: 40px
+		a
+			font-family: "GothamBook"
+		ul
+			margin-top: 20px
+			list-style-type: none
+			li
+				line-height: 23px
+				a
+					text-decoration: none
+		.soc_btn
+			margin-top: 27px
+			i
+				font-size: 30px
+				margin-right: 16px
+		p
+			margin-top: 60px
+			font-family: "GothamBook"

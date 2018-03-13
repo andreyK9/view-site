@@ -1,20 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Cherry+Swash:400,700");
 @font-face {
-  font-family: "HelveticaLTStd";
-  font-weight: 200;
-  src: url("../fonts/HelveticaLT/HelveticaLTCondensedMedium.ttf"); }
+  font-family: "GothamBold";
+  src: url("../fonts/fonts/gotham/GothamBold.ttf"); }
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/fonts/gotham/GothamMedium.ttf"); }
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/fonts/gotham/GothamBook.ttf"); }
+@font-face {
+  font-family: "GothamLight";
+  src: url("../fonts/fonts/gotham/GothamLight.ttf"); }
 
-@font-face {
-  font-family: "HelveticaLTStd";
-  font-weight: 300;
-  src: url("../fonts/HelveticaLT/HelveticaLTStd-Light.otf"); }
-
-@font-face {
-  font-family: "HelveticaLTStd";
-  font-weight: normal;
-  src: url("../fonts/HelveticaLT/HelveticaLTStd-Roman.otf"); }
-
-@font-face {
-  font-family: "HelveticaLTStd";
-  font-weight: bold;
-  src: url("../fonts/HelveticaLT/HelveticaLTStd-Bold.otf"); }
+/*# sourceMappingURL=fonts.css.map */
