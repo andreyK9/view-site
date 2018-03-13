@@ -2,63 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f81a75c-b4e0-4ce0-9a2f-03c361404463" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/normalize/normalize.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/sass/fonts.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/sass/style.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/css/duhoot.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/font/duhoot.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/font/duhoot.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/font/duhoot.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/font/duhoot.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/font/duhoot.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/svg/bass.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/svg/hat.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/svg/home.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/svg/melody.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/duhoot_icons/svg/woman.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-Black.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-Bold.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-BookItalic.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-Light.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-Thin.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-ThinItalic.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-UltraItalic.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-XLight.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/Gotham-XLightItalic.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamBold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamBoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamBook.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamBookItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamLight.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamLightItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamMedium.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/fonts/fonts/gotham/GothamMediumItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/angle_down.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/angle_gray_down.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/comment_1_icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/comment_2_icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/footer_bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/main_bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/map_icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/product/product_1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/product/product_2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/product/product_3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/product/product_4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/product/product_big_1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/product/product_big_2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/reality_sprites.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/libs/jquery/jquery-2.1.3.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -76,8 +20,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="43" />
+            <state relative-caret-position="51">
+              <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -217,12 +161,12 @@
       <updated>1520957983551</updated>
       <workItem from="1520957985030" duration="1720000" />
       <workItem from="1520959843154" duration="1712000" />
-      <workItem from="1520967790624" duration="360000" />
+      <workItem from="1520967790624" duration="516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3792000" />
+    <option name="totallyTimeSpent" value="3948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="379" y="56" width="950" height="981" extended-state="0" />
@@ -300,8 +244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="43" />
+        <state relative-caret-position="51">
+          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
       </provider>
